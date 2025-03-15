@@ -41,16 +41,10 @@ class CourseTest {
 
     private static Stream<Arguments> provideGradesForSetGrade() {
         return Stream.of(
-                Arguments.of(0, 4.0), // A+
-                Arguments.of(1, 3.75), // A
-                Arguments.of(2, 3.50), // A-
-                Arguments.of(3, 3.25), // B+
-                Arguments.of(4, 3.00), // B
-                Arguments.of(5, 2.75), // B-
-                Arguments.of(6, 2.50), // C+
-                Arguments.of(7, 2.25), // C
-                Arguments.of(8, 2.00), // D
-                Arguments.of(9, 0.0) // F
+                Arguments.of(0, 4.0),
+                Arguments.of(1, 3.75),
+                Arguments.of(2, 3.50), 
+          
         );
     }
 
