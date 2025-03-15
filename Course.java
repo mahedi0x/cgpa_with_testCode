@@ -1,16 +1,13 @@
+//package Project.CGPA;
 
 public class Course {
-
     private String name = "";
     private double credit = 0.0;
     private double grade;
     private String letterGrade = "";
     private static double totalCreditEarned = 0;
 
-    
-    public Course() {
-
-    }
+    public Course() {}
 
     public Course(String name, double credit, double grade) {
         this.name = name;
@@ -39,9 +36,7 @@ public class Course {
     }
 
     public void setGrade(int grade) {
-
         switch (grade) {
-
             case 0 -> this.grade = 4.0;
             case 1 -> this.grade = 3.7;
             case 2 -> this.grade = 3.3;
@@ -54,7 +49,6 @@ public class Course {
             case 9 -> this.grade = 1.0;
             case 10 -> this.grade = 0;
         }
-
     }
 
     public String getLetterGrade() {
@@ -62,9 +56,7 @@ public class Course {
     }
 
     public void setLetterGrade(int grade) {
-
         switch (grade) {
-
             case 0 -> this.letterGrade = "A";
             case 1 -> this.letterGrade = "A-";
             case 2 -> this.letterGrade = "B+";
@@ -75,9 +67,8 @@ public class Course {
             case 7 -> this.letterGrade = "C-";
             case 8 -> this.letterGrade = "D+";
             case 9 -> this.letterGrade = "D";
-            case 10 ->this.letterGrade = "F";
+            case 10 -> this.letterGrade = "F";
         }
-
     }
 
     public static double getTotalCreditEarned() {
@@ -89,16 +80,10 @@ public class Course {
     }
 
     public String toString() {
-
-        return  "\n         " + name +
+        return "\n         " + name +
                 "                   " + credit +
                 "                   " + grade +
                 "                                  " + letterGrade +
-                "\n----------------------------------------------------------------------------------------------"
-
-                ;
-
+                "\n----------------------------------------------------------------------------------------------";
     }
-
-
 }
