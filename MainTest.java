@@ -133,8 +133,22 @@ public class MainTest {
     @Test
     void testTimeoutExecution() {
         assertTimeout(java.time.Duration.ofSeconds(1), () -> {
-            Thread.sleep(500); // Simulating a process
+            Thread.sleep(500); 
         });
     }
 
+
+    //-----------------------assertlineMatch----------------------------
+    @Test
+    void testLineMatch(){
+    Course course = new Course("BST", 2, "A+");
+    course.setName("BST");
+    List<String> expectedLine = List.of("BST","OS");
+    List<String> actualLine =List.of(course.getName(), "OS");
+
+    assertLinesMatch(expectedLine,actualLine);
+}
+
+
+    
 }
